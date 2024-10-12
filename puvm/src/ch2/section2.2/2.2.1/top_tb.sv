@@ -40,4 +40,9 @@ initial begin
    rst_n = 1'b1;
 end
 
+initial begin
+    $fsdbDumpfile("wave.fsdb");
+    $fsdbDumpvars(0);
+end
+
 endmodule
