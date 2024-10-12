@@ -38,11 +38,15 @@ initial begin
 end
 
 initial begin
+    $fsdbDumpfile("wave.fsdb");
+    $fsdbDumpvars(0);
+end
+
+initial begin
    run_test("my_driver");
 end
 
 initial begin
    uvm_config_db#(virtual my_if)::set(null, "uvm_test_top", "vif", input_if);
 end
-
 endmodule

@@ -32,7 +32,7 @@ INCA_libs/
 waves.shm/
 *.log
 *.key
-*.f
+#*.f
 *.shm/
 
 debussyLog/
