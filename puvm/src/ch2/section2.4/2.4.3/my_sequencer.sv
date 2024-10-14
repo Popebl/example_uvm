@@ -1,6 +1,10 @@
 `ifndef MY_SEQUENCER__SV
 `define MY_SEQUENCER__SV
 
+`include "uvm_macros.svh"
+`include "uvm_pkg.sv"
+import uvm_pkg::*;
+
 class my_sequencer extends uvm_sequencer #(my_transaction);
    
    function new(string name, uvm_component parent);

@@ -1,6 +1,10 @@
 `ifndef MY_AGENT__SV
 `define MY_AGENT__SV
 
+`include "uvm_macros.svh"
+`include "uvm_pkg.sv"
+import uvm_pkg::*;
+
 class my_agent extends uvm_agent ;
    my_sequencer  sqr;
    my_driver     drv;
