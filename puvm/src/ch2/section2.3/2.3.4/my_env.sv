@@ -1,6 +1,11 @@
 `ifndef MY_ENV__SV
 `define MY_ENV__SV
 
+`include "uvm_macros.svh"
+`include "uvm_pkg.sv"
+import uvm_pkg::*;
+`include "my_agent.sv"
+
 class my_env extends uvm_env;
 
    my_agent  i_agt;

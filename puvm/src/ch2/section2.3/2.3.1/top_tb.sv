@@ -39,6 +39,11 @@ initial begin
 end
 
 initial begin
+    $fsdbDumpfile("wave.fsdb");
+    $fsdbDumpvars(0);
+end
+
+initial begin
    run_test("my_driver");
 end
 

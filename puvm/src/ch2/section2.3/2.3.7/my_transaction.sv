@@ -1,6 +1,10 @@
 `ifndef MY_TRANSACTION__SV
 `define MY_TRANSACTION__SV
 
+`include "uvm_macros.svh"
+`include "uvm_pkg.sv"
+import uvm_pkg::*;
+
 class my_transaction extends uvm_sequence_item;
 
    rand bit[47:0] dmac;

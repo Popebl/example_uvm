@@ -1,6 +1,10 @@
 `ifndef MY_AGENT__SV
 `define MY_AGENT__SV
 
+`include "uvm_macros.svh"
+`include "uvm_pkg.sv"
+import uvm_pkg::*;
+
 class my_agent extends uvm_agent ;
    my_driver     drv;
    my_monitor    mon;
@@ -32,4 +36,3 @@ function void my_agent::connect_phase(uvm_phase phase);
 endfunction
 
 `endif
-
