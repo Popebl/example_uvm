@@ -1,6 +1,10 @@
 `ifndef MY_MODEL__SV
 `define MY_MODEL__SV
 
+`include "uvm_macros.svh"
+`include "uvm_pkg.sv"
+import uvm_pkg::*;
+
 class my_model extends uvm_component;
    
    uvm_blocking_get_port #(my_transaction)  port;

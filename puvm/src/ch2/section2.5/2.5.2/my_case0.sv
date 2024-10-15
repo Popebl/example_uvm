@@ -1,5 +1,12 @@
 `ifndef MY_CASE0__SV
 `define MY_CASE0__SV
+
+`include "uvm_macros.svh"
+`include "uvm_pkg.sv"
+import uvm_pkg::*;
+`include "my_env.sv"
+`include "base_test.sv"
+
 class case0_sequence extends uvm_sequence #(my_transaction);
    my_transaction m_trans;
 

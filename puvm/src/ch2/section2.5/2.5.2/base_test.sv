@@ -1,6 +1,11 @@
 `ifndef BASE_TEST__SV
 `define BASE_TEST__SV
 
+`include "uvm_macros.svh"
+`include "uvm_pkg.sv"
+import uvm_pkg::*;
+`include "my_env.sv"
+
 class base_test extends uvm_test;
 
    my_env         env;
